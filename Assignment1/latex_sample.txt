@@ -19,3 +19,66 @@ contribute to the community as this open-access will help direct the cost of jou
 towards actual research. The inferences of the research will prove imperative in bringing out awareness
 pertaining to a spesific domain if it is released publicly which will attract more research in the 
 domains like medical science.
+
+
+To show that the logical expressions \(p \leftrightarrow q\) and \((p \land q) \lor (\neg p \land \neg q)\) are logically equivalent using algebra, we can simplify both expressions and demonstrate that they are equal. We'll use logical equivalences and algebraic manipulations to achieve this:
+
+Starting with \(p \leftrightarrow q\), we can use the definition of the biconditional operator (\(\leftrightarrow\)):
+
+\[
+p \leftrightarrow q \equiv (p \land q) \lor (\neg p \land \neg q)
+\]
+
+Now, let's simplify the right-hand side of the equation:
+
+1. **Distribute the \(\lor\) over the \(\land\):**
+
+\[
+(p \land q) \lor (\neg p \land \neg q) \equiv (p \lor \neg p) \land (p \lor \neg q) \land (q \lor \neg p) \land (q \lor \neg q)
+\]
+
+2. **Apply the Law of Excluded Middle (\(p \lor \neg p\) and \(q \lor \neg q\) are always true):**
+
+\[
+\text{(True)} \land (p \lor \neg q) \land (q \lor \neg p) \land \text{(True)}
+\]
+
+3. **The result is equivalent to the middle terms \((p \lor \neg q) \land (q \lor \neg p)\) since \(\text{True} \land \text{True}\) simplifies to \(\text{True}\):**
+
+\[
+(p \lor \neg q) \land (q \lor \neg p)
+\]
+
+So, we have shown that \(p \leftrightarrow q\) is logically equivalent to \((p \land q) \lor (\neg p \land \neg q)\) using logical equivalences and algebraic manipulations.
+
+
+
+(p∨q)∧(¬p∨r)→(q∨r)
+(
+p
+∧
+(
+¬
+p
+∨
+r
+)
+)
+∨
+(
+q
+∧
+(
+¬
+p
+∨
+r
+)
+)
+→
+(
+q
+∨
+r
+)
+(p∧(¬p∨r))∨(q∧(¬p∨r))→(q∨r)
